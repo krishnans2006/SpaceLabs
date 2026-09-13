@@ -1,4 +1,4 @@
- 
+
 import java.awt.*;
 import javax.swing.*;
 import java.awt.geom.*;
@@ -64,8 +64,8 @@ public class Planet{
   /**
   *No param constructor
   *creates a planet with attributes identical to Earth
-  *@param none
-  *@see ImageIcon, Image
+  *@see ImageIcon
+  *@see Image
   */
 public Planet() //empty constructor initilizes the default planet, earth.
 {
@@ -79,10 +79,10 @@ public Planet() //empty constructor initilizes the default planet, earth.
 }
   /**
   *Name constructor- Takes name, and creates a planet based on internal database of planets
-  *@param String name, name of planet
+  *@param name name of planet
   *@see JOptionPane
-  *@see Image.java
-  *@see ImageIcon.java
+  *@see Image
+  *@see ImageIcon
   */
 public Planet(String name){ 
     //takes in planet name, and sets values accordingly
@@ -226,12 +226,12 @@ public Planet(String name){
 }
 /**
 *Constructer with all attributes of a planet
-*@param String n name of the planet
-*@param double m mass of planet, as a ratio to earth
-*@param double e eccentricity of orbit
-*@param double sMGA semi-major axis, as a ratio to earth
-*@param double vel orbital velocity or planet
-*@param String s String directory of Sprite001
+*@param n name of the planet
+*@param m mass of planet, as a ratio to earth
+*@param e eccentricity of orbit
+*@param sMGA semi-major axis, as a ratio to earth
+*@param vel orbital velocity or planet
+*@param s String directory of Sprite001
 */
 public Planet(String n, double m, double e, double sMGA, double vel, String s){ //initilizes, given all values
   Name = n;
@@ -299,35 +299,35 @@ public String getImage(){
 //setters
 /**
 *sets the name of the planet to the given String
-*@param String n name of planet
+*@param n name of planet
 */
 public void setName(String n){
     Name = n;
 }
 /**
 *sets the mass of the planet to the given double
-*@param double m mass of planet as a ratio to earth
+*@param m mass of planet as a ratio to earth
 */
 public void setMass(double m){
   mass = m;
 }
 /**
 *sets the diameter of the planet to the given double
-*@param double d diameter of planet as a ratio to earth
+*@param s diameter of planet as a ratio to earth
 */
 public void setDiameter(double s){
   diameter = s;
 }
 /**
 *sets the eccentricity of the planet to the given double
-*@param double e eccentricity of planet
+*@param e eccentricity of planet
 */
 public void setEccentricity(double e){
   eccentricity = e;
 }
 /**
 *sets the semimajor axis of the planet to the given double
-*@param double m semimajor axis of the planet in AU
+*@param m semimajor axis of the planet in AU
 */
 public void setSemiMajorAxis(double m){
   semiMajorAxis = m;
@@ -338,7 +338,7 @@ public void setSemiMajorAxis(double m){
 
 /**
 *Sets X and Y to the next location, using the paramatric definaition of an ellipse
-*@param double t the time
+*@param t the time
 */
 public void refresh(double t){
    //calculate orbital velocity m/s
@@ -365,7 +365,7 @@ public void refresh(double t){
 }
 /**
 *Sets the factor by whicb the x and y are scalled
-*param double z zoom factor
+*@param zoom zoom factor
 */
 
 public void setZoom(int zoom){

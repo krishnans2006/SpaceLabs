@@ -1,4 +1,3 @@
-
 import javax.swing.*;
 import java.awt.*;
 import javax.swing.JFrame;
@@ -9,7 +8,7 @@ import javax.swing.JFrame;
 * Class Main
 * This is the driver class, and should be run
 * Dependencies: Game, Planet, PlanetDetail, PSystem, RepaintApplet, Satelite, and SidePanel
-* @Author Krishan Shankar, Mohib Ahmed, Kanjonavo Sabud
+* @author Krishan Shankar, Mohib Ahmed, Kanjonavo Sabud
 * @version 1
 */
 
@@ -17,9 +16,9 @@ import javax.swing.JFrame;
 public class Main {
     /**
     * Main Method. Contains runnable code
-    * @param String args[], this param is unused
     * @see Game
     * @see JFrame
+    *@param args default param, does nothing
     */
    public static void main(String[] args) {
 

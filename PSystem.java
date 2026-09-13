@@ -9,7 +9,7 @@ import java.io.*;
 * (look in Planet Class to se specifics).
 * PSystem Class has speciic public methods which allow the RepaintApplet to efficiently use
 * the data stored in the Planet Class
-* @author Krishnan Shankar, Mohib Ahmed
+* @author Mohib Ahmed
 * @version 1
 */ 
 
@@ -28,7 +28,7 @@ public class PSystem{
    }
    /**
    * Planet Array parameter Constructor.
-   * @param Planet[] list  Takes in a list of Planet and adds it to an Array of Planets
+   * @param list  Takes in a list of Planet and adds it to an Array of Planets
    */ 
    public PSystem(Planet[] list){
       arr = new ArrayList<Planet>(list.length);
@@ -65,7 +65,7 @@ public class PSystem{
     /**
     * Finds Planet, recognizing it by name,
     * and returns it
-    * @param name Name of the planet that needs to be found 
+    * @param s Name of the planet that needs to be found 
     * @return planetNumber The planet's number in the array is returned
     */ 
     public int findPlanet(String s){
@@ -80,7 +80,7 @@ public class PSystem{
 //add a planet
    /**
    * Adds a planet to the Array of Planets
-   * @param Planet  Adds the planet, complete with all its characteristics
+   * @param p Adds the planet, complete with all its characteristics
    * @see Planet  See Planet class for specifications on characteristics
    */
    public void add(Planet p){
@@ -90,7 +90,7 @@ public class PSystem{
 //remove planet
    /**
    * Removes planet defined by the number 
-   * @param Planet's Number  The planets number in the array is inputted
+   * @param n  The planets number in the array is inputted
    * @see findPlanet See this methods as this methods finds the planet's number
    */
    public void remove(int n){
@@ -106,7 +106,7 @@ public class PSystem{
    }
    /**
    * Refreshes the array periodically 
-   * @param Double t  Takes in time, and updates each planet
+   * @param t  Takes in time, and updates each planet
    */
    public void update(double t){
       for(int i = 0; i < arr.size(); i++){
@@ -116,7 +116,7 @@ public class PSystem{
 
    /**
    * Sets the zoom of every planet
-   * @param int ZoomAmount the scale factor used by planet class
+   * @param z the scale factor used by planet class
    * @see Planet 
    */
    public void setZoomable(int z){

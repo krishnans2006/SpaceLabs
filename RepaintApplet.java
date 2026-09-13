@@ -103,7 +103,12 @@ public class RepaintApplet extends JApplet implements Runnable{
    * @author Ahmed Mohib
    * @author Kanjonavo Sabud
    * @author Krishnan Shankar
-   * @see Exception, Thread, PSystem, Planet, SidePanel, PlanetsDetail
+   * @see Exception
+   * @see Thread
+   * @see PSystem
+   * @see Planet
+   * @see SidePanel
+   * @see PlanetsDetail
    */
    public void run ()
    {

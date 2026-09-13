@@ -210,7 +210,7 @@ public class SidePanel extends JPanel {
    */ 
    private class DetailListener implements ActionListener {
        /**
-       *@param ActionEvent e the event the listner waits for
+       *@param e the event the listner waits for
        */
       public void actionPerformed(ActionEvent e) {
          isDetail = true;
@@ -221,7 +221,7 @@ public class SidePanel extends JPanel {
    */
    private class InsertListener implements ActionListener {
        /**
-       *@param ActionEvent e the event the listner waits for
+       *@param e the event the listner waits for
        */
       public void actionPerformed(ActionEvent e) {
          isAdd = true;
@@ -232,7 +232,7 @@ public class SidePanel extends JPanel {
    */
    private class DeleteListener implements ActionListener {
        /**
-       *@param ActionEvent e the event the listner waits for
+       *@param e the event the listner waits for
        */
       public void actionPerformed(ActionEvent e) {
          isDelete = true;
@@ -243,7 +243,7 @@ public class SidePanel extends JPanel {
    */
    private class RunListener implements ActionListener {
        /**
-       *@param ActionEvent e the event the listner waits for
+       *@param e the event the listner waits for
        */
       public void actionPerformed(ActionEvent e) {
          isRun = true;
@@ -254,7 +254,7 @@ public class SidePanel extends JPanel {
    */
    private class PauseListener implements ActionListener {
        /**
-       *@param ActionEvent e the event the listner waits for
+       *@param e the event the listner waits for
        */
       public void actionPerformed(ActionEvent e) {
          isPause = true;
@@ -265,7 +265,7 @@ public class SidePanel extends JPanel {
    */
    private class ResetListener implements ActionListener {
        /**
-       *@param ActionEvent e the event the listner waits for
+       *@param e the event the listner waits for
        */
       public void actionPerformed(ActionEvent e) {
          isRest = true;
@@ -277,7 +277,7 @@ public class SidePanel extends JPanel {
    */
    private class SaveListener implements ActionListener {
        /**
-       *@param ActionEvent e the event the listner waits for
+       *@param e the event the listner waits for
        */
       public void actionPerformed(ActionEvent e) {
          isSave = true;
@@ -289,7 +289,7 @@ public class SidePanel extends JPanel {
    */
    private class LoadListener implements ActionListener {
        /**
-       *@param ActionEvent e the event the listner waits for
+       *@param  e the event the listner waits for
        */
       public void actionPerformed(ActionEvent e) {
          isLoad = true;
@@ -301,7 +301,7 @@ public class SidePanel extends JPanel {
    */
    private class OnSpeedChange implements ChangeListener {
        /**
-       *@param ChangeEvent e the event the listner waits for
+       *@param  e the event the listner waits for
        */
       public void stateChanged(ChangeEvent e) {
          JSlider slider = (JSlider) e.getSource();
@@ -316,7 +316,7 @@ public class SidePanel extends JPanel {
    */
    private class zoomInListener implements ActionListener {
        /**
-       *@param ActionEvent e the event the listner waits for
+       *@param  e the event the listner waits for
        */
       public void actionPerformed(ActionEvent e) {
          tZoom += 10;
@@ -341,7 +341,7 @@ public class SidePanel extends JPanel {
    */
    private class zoomOutListener implements ActionListener {
        /**
-       *@param ActionEvent e the event the listner waits for
+       *@param  e the event the listner waits for
        */
       public void actionPerformed(ActionEvent e) {
          tZoom -= 10;
